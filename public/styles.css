@@ -22,6 +22,11 @@ body {
   color: var(--dark-gray);
   background-color: var(--light-gray);
 }
+i {
+  font-style: oblique;
+  font-weight: 100;
+  font-size: smaller;
+}
 
 a {
   text-decoration: none;
