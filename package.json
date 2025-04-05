@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --open / -d",
+    "dev": "vite --host 0.0.0.0",
     "prebuild": "vite optimize --force",
     "build": "tsc -b && vite build --outDir dist",
     "lint": "eslint . --ext .ts,.js",

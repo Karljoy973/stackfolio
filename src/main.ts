@@ -1,5 +1,6 @@
-import './styles.css';
-import './index.js';
+import '../public/styles.css';
+import './utils/index.js';
+import './utils/theme-switcher.js';
 
 const rootElement = document.querySelector('#root');
 if (rootElement) {
