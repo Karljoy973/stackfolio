@@ -1,0 +1,401 @@
+/* Réinitialisation et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #4b5563;
+  --light-gray: #f3f4f6;
+  --dark-gray: #374151;
+  --accent-color: #3b82f6;
+  --white: #ffffff;
+  --font-main: 'Roboto', 'Arial', sans-serif;
+  --font-heading: 'Poppins', 'Helvetica', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* En-tête de page */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark-gray);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+/* CV Styles */
+.cv-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-info {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item, .education-item {
+  margin-bottom: 1.25rem;
+}
+
+.experience-header, .education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.company-name, .degree-name {
+  font-weight: 600;
+}
+
+.job-title, .field-of-study {
+  font-style: italic;
+}
+
+.date-range {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background-color: var(--light-gray);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.tech-skill {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
+}
+
+.soft-skill {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+
+/* Dossier de compétences */
+.portfolio-container {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.competence-item {
+  margin-bottom: 2rem;
+}
+
+.competence-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.competence-icon {
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  border-color: var(--dark-gray);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.project-tech {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+/* Boutons et liens d'action */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #333;
+}
+
+/* Theme switcher */
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.theme-dot {
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.theme-dot:hover {
+  transform: scale(1.1);
+}
+
+.theme-dot.solar-theme {
+  width: 25px;
+  height: 25px;
+}
+
+.theme-dot.dark-theme {
+  width: 25px;
+  height: 25px;
+}
+
+.theme-dot.geek-theme {
+  width: 25px;
+  height: 25px;
+}
+
+.dot-left, .dot-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.dot-left {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.dot-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+/* Solar theme colors */
+.solar-theme .dot-left {
+  background-color: #70a1ff;
+}
+.solar-theme .dot-right {
+  background-color: #f1f9ff;
+}
+
+/* Dark theme colors */
+.dark-theme .dot-left {
+  background-color: #60a5fa;
+}
+.dark-theme .dot-right {
+  background-color: #0f172a;
+}
+
+/* Geek theme colors */
+.geek-theme .dot-left {
+  background-color: #00ff41;
+}
+.geek-theme .dot-right {
+  background-color: #0a1930;
+}
+
+/* Styles pour tablette et mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .cv-container, .portfolio-container {
+    padding: 1.5rem;
+  }
+
+  .experience-header, .education-header {
+    flex-direction: column;
+  }
+
+  .profile-header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Print styles pour le CV */
+@media print {
+  body {
+    background-color: white;
+    font-size: 12pt;
+  }
+
+  .cv-container {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* Styles pour la prévisualisation du projet */
+.project-preview {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: visible;
+  box-shadow: var(--card-shadow);
+  border: var(--project-card-border);
+  background-color: var(--card-background);
+}
+
+.project-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-preview:hover img
+{
+  transition: transform 0.3s ease;
+  transform: scale(1.02);
+}
+
+
+
+/* Media queries pour le responsive */
+@media screen and (max-width: 768px) {
+  .project-preview {
+    margin-top: 1rem;
+  }
+}
+
+/* Optimisation pour l'impression */
+@media print {
+  .project-preview {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+    break-inside: avoid;
+  }
+  
+  .project-preview img {
+    max-height: 200px;
+    object-fit: contain;
+  }
+  .project-preview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}

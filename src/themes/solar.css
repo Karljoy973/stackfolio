@@ -1,0 +1,77 @@
+/* Thème Solar - Couleurs pastel claires */
+:root {
+  --primary-color: #70a1ff;
+  --secondary-color: #786fa6;
+  --light-gray: #f7f9fb;
+  --dark-gray: #596275;
+  --accent-color: #ff9ff3;
+  --white: #ffffff;
+  --font-main: 'Roboto', 'Arial', sans-serif;
+  --font-heading: 'Poppins', 'Helvetica', sans-serif;
+
+  /* Couleurs spécifiques au thème Solar */
+  --background-color: #f1f9ff;
+  --card-background: #ffffff;
+  --card-shadow: 0 4px 15px rgba(112, 161, 255, 0.1);
+  --tech-skill-bg: rgba(112, 161, 255, 0.1);
+  --tech-skill-color: #5186e8;
+  --soft-skill-bg: rgba(255, 159, 243, 0.1);
+  --soft-skill-color: #e07ad2;
+  --heading-border: 2px solid #c8e1ff;
+  --button-hover: #5186e8;
+  --project-card-border: 1px solid #e8f1ff;
+}
+
+/* Remplacements spécifiques pour le thème Solar */
+body {
+  background-color: var(--background-color);
+  color: var(--dark-gray);
+}
+
+.cv-container, .portfolio-container {
+  background-color: var(--card-background);
+  box-shadow: var(--card-shadow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  border-bottom: var(--heading-border);
+}
+
+.tech-skill {
+  background-color: var(--tech-skill-bg);
+  color: var(--tech-skill-color);
+}
+
+.soft-skill {
+  background-color: var(--soft-skill-bg);
+  color: var(--soft-skill-color);
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.competence-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.project-card {
+  border: var(--project-card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 20px rgba(112, 161, 255, 0.15);
+}
+
+.progress-bar {
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+}

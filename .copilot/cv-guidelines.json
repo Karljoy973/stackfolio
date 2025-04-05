@@ -1,0 +1,82 @@
+{
+  "title": "Lignes directrices pour le CV",
+  "objective": "Créer un CV efficace pour un développeur junior, lisible en moins de 20 secondes",
+  "structure": [
+    {
+      "section": "En-tête avec informations de contact",
+      "elements": [
+        "Nom et prénom (mis en évidence)",
+        "Titre professionnel clair",
+        "Email, téléphone, localisation",
+        "Liens vers LinkedIn et GitHub"
+      ]
+    },
+    {
+      "section": "Profil / À propos",
+      "elements": [
+        "2-3 phrases maximum",
+        "Mettre en avant la valeur ajoutée et l'expertise principale",
+        "Mentionner le diplôme récent d'ingénieur"
+      ]
+    },
+    {
+      "section": "Compétences techniques",
+      "elements": [
+        "Format visuel (tags ou puces)",
+        "Regrouper par catégories",
+        "Placer les compétences les plus pertinentes en premier",
+        "Inclure technologies, langages, frameworks et outils"
+      ]
+    },
+    {
+      "section": "Expérience professionnelle",
+      "elements": [
+        "Format inverse-chronologique",
+        "Pour chaque expérience: entreprise et poste",
+        "Dates",
+        "3-5 puces décrivant les réalisations et responsabilités",
+        "Chiffres et métriques si possible"
+      ]
+    },
+    {
+      "section": "Formation",
+      "elements": [
+        "Diplôme d'ingénieur en premier",
+        "Établissement et date",
+        "Mention éventuelle et spécialisation",
+        "Ajouter le sujet du mémoire si pertinent"
+      ]
+    },
+    {
+      "section": "Projets personnels/académiques",
+      "elements": [
+        "1-2 projets significatifs",
+        "Description courte mais avec les technologies utilisées",
+        "Objectif et résultat"
+      ]
+    },
+    {
+      "section": "Langues et centres d'intérêt",
+      "elements": [
+        "Section courte en fin de CV",
+        "Format concis"
+      ]
+    }
+  ],
+  "mise_en_page": [
+    "Une page maximum (A4)",
+    "Police lisible (10-12pt)",
+    "Marges suffisantes (2-2.5cm)",
+    "Utilisation cohérente des styles (gras, italique)",
+    "Séparation claire des sections",
+    "Format d'impression optimisé"
+  ],
+  "conseils_contenu": [
+    "Privilégier les réalisations plutôt que les responsabilités",
+    "Utiliser des verbes d'action au début des puces",
+    "Quantifier les résultats lorsque possible",
+    "Adapter les mots-clés aux offres d'emploi visées",
+    "Éviter le jargon trop technique pour un premier scan",
+    "Mettre en avant les stages en lien avec le développement web"
+  ]
+}

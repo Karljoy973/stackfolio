@@ -1,0 +1,35 @@
+{
+  "projectName": "CV et Dossier de Compétences",
+  "objective": "Créer un CV professionnel et un dossier de compétences pour un ingénieur développeur web junior, lisible en moins de 20 secondes",
+  "structure": {
+    "cv": "Document synthétique présentant le profil, les compétences, l'expérience, la formation et les projets",
+    "competences": "Document détaillé approfondissant les compétences techniques, projets significatifs et compétences transversales"
+  },
+  "technologies": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Google Fonts (Poppins, Roboto)",
+    "Font Awesome"
+  ],
+  "features": [
+    "Design moderne et professionnel",
+    "Structure claire et lisible rapidement",
+    "Responsive design",
+    "Version imprimable optimisée pour le CV",
+    "Mise en valeur des compétences techniques",
+    "Navigation simple entre les documents"
+  ],
+  "fileStructure": {
+    "index.html": "Page de redirection vers le CV",
+    "cv.html": "Le CV complet",
+    "competences.html": "Le dossier de compétences détaillé",
+    "styles.css": "Styles communs pour les deux documents"
+  },
+  "usage": [
+    "Personnaliser le contenu des fichiers HTML",
+    "Adapter les couleurs et le style dans le CSS",
+    "Déployer sur hébergement web statique",
+    "Partager l'URL ou imprimer le CV"
+  ]
+}

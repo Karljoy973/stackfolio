@@ -1,0 +1,102 @@
+/* Thème Dark - Style sombre et élégant */
+:root {
+  --primary-color: #60a5fa;      /* Bleu clair */
+  --secondary-color: #94a3b8;    /* Gris moyen */
+  --light-gray: #1e293b;         /* Bleu très foncé */
+  --dark-gray: #e2e8f0;          /* Gris très clair */
+  --accent-color: #8b5cf6;       /* Violet */
+  --white: #f8fafc;              /* Blanc cassé */
+  --font-main: 'Inter', 'Arial', sans-serif;
+  --font-heading: 'Manrope', 'Helvetica', sans-serif;
+
+  /* Couleurs spécifiques au thème Dark */
+  --background-color: #0f172a;
+  --card-background: #1e293b;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  --tech-skill-bg: rgba(96, 165, 250, 0.1);
+  --tech-skill-color: #60a5fa;
+  --soft-skill-bg: rgba(139, 92, 246, 0.1);
+  --soft-skill-color: #8b5cf6;
+  --heading-border: 2px solid #334155;
+  --button-hover: #3b82f6;
+  --project-card-border: 1px solid #334155;
+}
+
+/* Remplacements spécifiques pour le thème Dark */
+body {
+  background-color: var(--background-color);
+  color: var(--dark-gray);
+}
+
+.cv-container, .portfolio-container {
+  background-color: var(--card-background);
+  box-shadow: var(--card-shadow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--white);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+h2 {
+  border-bottom: var(--heading-border);
+}
+
+.tech-skill {
+  background-color: var(--tech-skill-bg);
+  color: var(--tech-skill-color);
+}
+
+.soft-skill {
+  background-color: var(--soft-skill-bg);
+  color: var(--soft-skill-color);
+}
+
+.btn {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+  color: var(--white);
+}
+
+.competence-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.project-card {
+  border: var(--project-card-border);
+  background-color: var(--card-background);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: var(--primary-color);
+}
+
+.progress-bar {
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+}
+
+/* Optimisations pour la lisibilité */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+code {
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}

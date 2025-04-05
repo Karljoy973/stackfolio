@@ -1,0 +1,125 @@
+{
+  "title": "Guide d'implémentation technique",
+  "description": "Instructions techniques pour implémenter le projet de CV et dossier de compétences",
+  "file_structure": {
+    "public": {
+      "description": "Fichiers statiques accessibles directement",
+      "files": {
+        "_redirects": "Configuration des redirections pour l'hébergement",
+        "index.html": "Page de redirection vers le CV",
+        "cv.html": "Page du CV",
+        "competences.html": "Page du dossier de compétences",
+        "styles.css": "Feuille de styles commune"
+      }
+    },
+    "src": {
+      "description": "Code source",
+      "files": {
+        "main.ts": "Point d'entrée JavaScript/TypeScript",
+        "styles.css": "Styles (copiés dans public/)",
+        "index.js": "Script de redirection",
+        "cv.html": "Template du CV (copié dans public/)",
+        "competences.html": "Template du dossier de compétences (copié dans public/)"
+      }
+    },
+    "package.json": "Configuration du projet"
+  },
+  "development_steps": [
+    {
+      "step": "Configuration du projet",
+      "commands": [
+        "mkdir -p cv-portfolio",
+        "cd cv-portfolio",
+        "npm init -y",
+        "npm install --save-dev vite"
+      ]
+    },
+    {
+      "step": "Mise en place du HTML de base",
+      "tasks": [
+        "Créer la structure HTML pour le CV",
+        "Créer la structure HTML pour le dossier de compétences",
+        "Ajouter les balises meta pour SEO",
+        "Lier les polices Google Fonts",
+        "Lier les icônes Font Awesome"
+      ]
+    },
+    {
+      "step": "Développement CSS",
+      "tasks": [
+        "Définir les variables CSS pour les couleurs et polices",
+        "Implémenter le reset CSS",
+        "Créer les styles de base (typographie, layout)",
+        "Développer les composants spécifiques (badges, barres de progression)",
+        "Ajouter les styles pour l'impression",
+        "Implémenter les media queries pour le responsive"
+      ]
+    },
+    {
+      "step": "JavaScript minimal",
+      "tasks": [
+        "Script de redirection pour la page d'accueil",
+        "Fonction d'impression pour le CV",
+        "Éventuellement: interactions pour les barres de progression"
+      ]
+    },
+    {
+      "step": "Optimisations",
+      "tasks": [
+        "Minification des assets",
+        "Compression des images si nécessaire",
+        "Tests cross-browser",
+        "Validation W3C"
+      ]
+    }
+  ],
+  "implementation_details": {
+    "css_variables": {
+      "code": ":root {\n  --primary-color: #2563eb;\n  --secondary-color: #4b5563;\n  --light-gray: #f3f4f6;\n  --dark-gray: #374151;\n  --accent-color: #3b82f6;\n  --white: #ffffff;\n  --font-main: 'Roboto', 'Arial', sans-serif;\n  --font-heading: 'Poppins', 'Helvetica', sans-serif;\n}"
+    },
+    "container": {
+      "code": ".container {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 2rem;\n}"
+    },
+    "skill_badges": {
+      "code": ".skill-tag {\n  background-color: var(--light-gray);\n  padding: 0.3rem 0.6rem;\n  border-radius: 4px;\n  font-size: 0.9rem;\n}\n\n.tech-skill {\n  background-color: rgba(37, 99, 235, 0.1);\n  color: var(--primary-color);\n}\n\n.soft-skill {\n  background-color: rgba(16, 185, 129, 0.1);\n  color: #059669;\n}"
+    },
+    "progress_bars": {
+      "code": ".progress-container {\n  width: 100%;\n  background-color: var(--light-gray);\n  border-radius: 4px;\n  margin: 0.5rem 0;\n}\n\n.progress-bar {\n  height: 8px;\n  border-radius: 4px;\n  background-color: var(--primary-color);\n}"
+    },
+    "print_styles": {
+      "code": "@media print {\n  body {\n    background-color: white;\n    font-size: 12pt;\n  }\n  \n  .cv-container {\n    box-shadow: none;\n    padding: 0;\n  }\n  \n  .no-print {\n    display: none;\n  }\n  \n  a {\n    text-decoration: none;\n    color: black;\n  }\n}"
+    },
+    "print_script": {
+      "code": "// Bouton d'impression\ndocument.getElementById('printButton').addEventListener('click', function() {\n  window.print();\n});"
+    }
+  },
+  "deployment": {
+    "preparation": [
+      "Assurer que tous les fichiers sont dans le dossier `/public`",
+      "Vérifier les liens entre les pages"
+    ],
+    "options": [
+      "Netlify (facile et gratuit)",
+      "GitHub Pages",
+      "Vercel",
+      "Hébergement traditionnel"
+    ],
+    "netlify": {
+      "commands": [
+        "npm install -g netlify-cli",
+        "netlify deploy --prod"
+      ]
+    },
+    "redirects": {
+      "file": "_redirects",
+      "content": "/*    /index.html   200"
+    }
+  },
+  "validation": [
+    "Tester sur différents navigateurs (Chrome, Firefox, Safari, Edge)",
+    "Tester sur différents appareils (desktop, tablet, mobile)",
+    "Tester l'impression du CV",
+    "Valider HTML avec W3C Validator",
+    "Valider CSS avec W3C CSS Validator"
+  ]
+}

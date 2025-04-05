@@ -1,0 +1,86 @@
+{
+  "title": "Lignes directrices pour le Dossier de Compétences",
+  "objectif": {
+    "description": "Le dossier de compétences approfondit les informations du CV et met en valeur vos compétences techniques, projets et qualités professionnelles",
+    "buts": [
+      "Démontrer votre expertise technique en détail",
+      "Présenter des projets concrets avec contexte et résultats",
+      "Illustrer vos compétences transversales avec des exemples",
+      "Montrer votre capacité d'analyse et de communication"
+    ]
+  },
+  "structure": [
+    {
+      "section": "Présentation / Introduction",
+      "elements": [
+        "Courte présentation professionnelle (1 paragraphe)",
+        "Synthèse de votre proposition de valeur"
+      ]
+    },
+    {
+      "section": "Compétences techniques détaillées",
+      "elements": [
+        "Structurer par catégories (Front-end, Back-end, DevOps, etc.)",
+        "Pour chaque compétence majeure: niveau de maîtrise (représentation visuelle)",
+        "Description détaillée des connaissances spécifiques",
+        "Contexte d'utilisation et expérience pratique",
+        "Inclure à la fois technologies utilisées quotidiennement et connaissances théoriques"
+      ]
+    },
+    {
+      "section": "Projets significatifs",
+      "elements": [
+        "Pour chaque projet (3-4 maximum):",
+        "Nom du projet et technologies utilisées",
+        "Contexte (professionnel, académique, personnel)",
+        "Objectifs et problématiques",
+        "Votre rôle et contributions spécifiques",
+        "Méthodologie utilisée",
+        "Résultats obtenus (qualitatifs et quantitatifs)",
+        "Défis rencontrés et solutions apportées"
+      ]
+    },
+    {
+      "section": "Compétences transversales",
+      "elements": [
+        "Compétences en communication",
+        "Travail d'équipe et collaboration",
+        "Résolution de problèmes",
+        "Autonomie et adaptabilité",
+        "Veille technologique et apprentissage continu",
+        "Pour chaque compétence: exemples concrets d'application"
+      ]
+    },
+    {
+      "section": "Certifications et formations complémentaires",
+      "elements": [
+        "Formations suivies hors cursus principal",
+        "Certifications techniques ou méthodologiques",
+        "Auto-formation structurée"
+      ]
+    },
+    {
+      "section": "Conclusion et projections",
+      "elements": [
+        "Résumé de votre profil et valeur ajoutée",
+        "Objectifs professionnels à court et moyen terme",
+        "Domaines d'intérêt pour développement futur"
+      ]
+    }
+  ],
+  "mise_en_forme": [
+    "Structure claire avec titres et sous-titres hiérarchisés",
+    "Utilisation d'éléments visuels (barres de progression, icônes)",
+    "Cohérence visuelle avec le CV (couleurs, polices)",
+    "3-6 pages bien structurées et aérées",
+    "Navigation facile entre les sections"
+  ],
+  "conseils_contenu": [
+    "Être précis et concret dans vos descriptions",
+    "Utiliser un vocabulaire technique approprié",
+    "Équilibrer aspects techniques et compétences humaines",
+    "Démontrer une compréhension des enjeux business",
+    "Adapter le contenu au secteur/poste visé",
+    "Mettre en avant la capacité d'apprentissage et l'adaptabilité"
+  ]
+}

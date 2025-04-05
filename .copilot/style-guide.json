@@ -1,0 +1,122 @@
+{
+  "title": "Guide de Style - CV et Dossier de Compétences",
+  "colors": {
+    "primary": {
+      "hex": "#2563eb",
+      "name": "Bleu royal",
+      "usage": "Titres, boutons et éléments d'accent"
+    },
+    "secondary": {
+      "hex": "#4b5563",
+      "name": "Gris foncé",
+      "usage": "Texte et éléments secondaires"
+    },
+    "background": {
+      "hex": "#f3f4f6",
+      "name": "Gris clair",
+      "usage": "Fond de la page"
+    },
+    "container": {
+      "hex": "#ffffff",
+      "name": "Blanc",
+      "usage": "Fond des conteneurs"
+    },
+    "accent_tech": {
+      "hex": "#dbeafe",
+      "name": "Bleu clair",
+      "usage": "Badges de compétences techniques"
+    },
+    "accent_soft": {
+      "hex": "#d1fae5",
+      "name": "Vert clair",
+      "usage": "Badges de compétences transversales"
+    }
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "'Poppins', 'Helvetica', sans-serif",
+      "fontWeight": 600,
+      "sizes": {
+        "h1": "2.5rem",
+        "h2": "1.75rem",
+        "h3": "1.25rem"
+      }
+    },
+    "body": {
+      "fontFamily": "'Roboto', 'Arial', sans-serif",
+      "fontWeight": {
+        "normal": 400,
+        "bold": 700
+      },
+      "fontSize": "1rem",
+      "lineHeight": 1.6
+    }
+  },
+  "layout": {
+    "container": {
+      "maxWidth": "1100px"
+    },
+    "spacing": {
+      "sectionMargin": "2rem",
+      "containerPadding": "2rem",
+      "elementSpacing": "1.5rem",
+      "itemSpacing": "1.25rem"
+    },
+    "borders": {
+      "containerRadius": "8px",
+      "elementRadius": "4px"
+    }
+  },
+  "components": {
+    "skillBadges": {
+      "padding": "0.3rem 0.6rem",
+      "borderRadius": "4px",
+      "fontSize": "0.9rem"
+    },
+    "progressBars": {
+      "height": "8px",
+      "borderRadius": "4px",
+      "background": "#f3f4f6",
+      "progressColor": "#2563eb"
+    },
+    "projectCards": {
+      "border": "1px solid #e5e7eb",
+      "borderRadius": "8px",
+      "padding": "1.5rem",
+      "hoverTransition": "transform 0.3s ease, box-shadow 0.3s ease"
+    },
+    "buttons": {
+      "padding": "0.5rem 1rem",
+      "borderRadius": "4px",
+      "colors": {
+        "primary": "#2563eb",
+        "secondary": "#4b5563",
+        "text": "#ffffff"
+      },
+      "transition": "background-color 0.3s ease"
+    }
+  },
+  "icons": {
+    "library": "Font Awesome 6.5.1",
+    "sizes": {
+      "inline": "1rem",
+      "competenceIcons": "1.25rem"
+    }
+  },
+  "responsive": {
+    "tablet": {
+      "breakpoint": "max-width: 768px",
+      "containerPadding": "1.5rem",
+      "headerLayout": "column"
+    },
+    "print": {
+      "background": "white",
+      "removeShadows": true,
+      "hideNavigation": true
+    }
+  },
+  "animations": {
+    "projectCards": "transform 0.3s ease, box-shadow 0.3s ease",
+    "buttons": "background-color 0.3s ease"
+  }
+}
