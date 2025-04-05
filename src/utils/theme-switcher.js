@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dot.addEventListener('click', setCurrentTheme);
         dot.addEventListener('touchstart', setCurrentTheme);
         dot.addEventListener('pointerdown', setCurrentTheme);
+        dot.addEventListener('mousedown', setCurrentTheme)
     });
 });
 
