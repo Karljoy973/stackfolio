@@ -5,10 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ajouter les écouteurs d'événements pour chaque pastille
     document.querySelectorAll('.theme-dot').forEach(dot => {
-        dot.addEventListener('click', (e) => {
-            const theme = e.currentTarget.dataset.theme;
-            setTheme(theme);
-        });
+        dot.addEventListener('click', setCurrentTheme);
+        dot.addEventListener('touchstart', setCurrentTheme);
+        dot.addEventListener('pointerdown', setCurrentTheme);
     });
 });
 
@@ -33,4 +32,10 @@ function setTheme(themeName) {
     document.querySelectorAll('.theme-dot').forEach(dot => {
         dot.classList.toggle('active', dot.dataset.theme === themeName);
     });
+}
+
+function setCurrentTheme(e) {
+
+    const theme = e.currentTarget.dataset.theme;
+    setTheme(theme);
 }
